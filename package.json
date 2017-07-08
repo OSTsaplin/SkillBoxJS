@@ -1,0 +1,42 @@
+{
+  "name": "javaScript-kurs-1",
+  "version": "0.0.3",
+  "main": "src/index.js",
+  "scripts": {
+    "wp": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "author": "Oleg Tsaplin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^7.0.1",
+    "express": "^4.15.2",
+    "npm-install-webpack-plugin": "^4.0.4",
+    "redux-devtools": "^3.4.0",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "description": "Study assignment",
+  "dependencies": {
+    "component-webpack-plugin": "0.2.1",
+    "npm-install-webpack-plugin": "4.0.4",
+    "precss": "1.4.0",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "2.13.2",
+    "redux-thunk": "^2.2.0",
+    "unsplash-js": "^4.6.0"
+  }
+}

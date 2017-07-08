@@ -1,0 +1,162 @@
+html, body {
+  width: 95%;
+  height: 98%;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+#root, #cargo {
+  width: 100%;
+  height: 100%;
+}
+li {
+  cursor: pointer;
+}
+a:hover {
+  color: red;
+}
+.blueLi {
+  color: blue;
+  text-decoration: underline;
+}
+.share {
+  border-radius: 9px;
+  padding: 5px;
+  background-color: #cdd8fe;
+  border: solid 1px #acfee4;
+}
+.headr {
+  width: 100%;
+  height: 2em;
+  padding: 0px;
+  text-align: center;
+  padding-top: 1em;
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.wrapp {
+  width: 100%;
+  min-height: calc(100% - 3.5em);
+  display: flex;
+  align-items: stretch;
+}
+.favore {
+  width: 20%;
+  display: flex;
+  flex-wrap:wrap;
+  align-content: space-between;
+}
+.gellerey {
+  width: 79%;
+  display: flex;
+  flex-wrap: wrap;
+  /*align-content: space-around;*/
+}
+.btn {
+  border-radius: 9px;
+  width: 100%;
+}
+.btn:enabled:hover, .galleryBtn:enabled:hover {
+  color: blue;
+  cursor: pointer;
+}
+.galleryBtn {
+  width: 130px;
+  border-radius: 9px;
+  margin-left: 12px;
+}
+.galleryBtnDiv {
+  width: 100%;
+  padding-top: 7px;
+  align-self: flex-end;
+}
+.foto {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 1%;
+  padding: 7px;
+}
+.emptyFoto {
+  border: dotted 1px gray;
+  cursor: default;
+  color: gray;
+}
+.realFoto {
+  border: solid 1px gray;
+  cursor: pointer;
+}
+.selectFoto {
+  border-color: blue;
+  background-color: #89ffd9;
+}
+.onlyPhoto {
+  width: 217px;
+  height: 160px;
+  overflow: hidden;
+  text-align: center;
+}
+.wrappPhotoMax {
+  width: 80%;
+}
+.maxPhotoBox {
+  width: 100%;
+  max-height: 90%;
+  text-align: center;
+}
+.infoBox {
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  margin-top: 3%;
+}
+.maxPhoto {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 2%;
+}
+#imgsBox {
+  width: 100%;
+  min-height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;      /* по главной оси */
+}
+.unsplashActive {
+  color: maroon;
+  text-decoration: underline;
+}
+.caption {
+  font-size: 0.6em;
+  font-weight: lighter;
+}
+.valueInfo {
+  font-size: 0.7em;
+  color: maroon;
+  margin-left: 5px;
+}
+.valueInfo2 {
+  font-size: 1.1em;
+  color: maroon;
+  margin-left: 5px;
+  margin-right: 21px;
+}
+.btnClose {
+  position: absolute;
+  float: right;
+  opacity: 0.7;
+  color: blue;
+  border-radius: 12px;
+}
+.btnClose:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+.btnLik {
+  color: green;
+  border-radius: 12px;
+}
+.inp {
+  width: 30px;
+  margin-left: 12px;
+}
