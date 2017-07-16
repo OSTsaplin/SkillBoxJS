@@ -32,7 +32,7 @@ a:hover {
   padding-top: 1em;
   margin-top: 1%;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .wrapp {
   width: 100%;
@@ -64,6 +64,7 @@ a:hover {
   width: 130px;
   border-radius: 9px;
   margin-left: 12px;
+  display: inline;
 }
 .galleryBtnDiv {
   width: 100%;

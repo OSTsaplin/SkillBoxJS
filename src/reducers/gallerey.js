@@ -24,6 +24,10 @@ export default function gallerey(state = initialState, action) {
       }
     }
 
+    // case "SELECT_LI_BEFORE_ADD_IMG": {
+    //   return { AImg: [...state.AImg], idCurrentImg: -1, page: state.page, btnDelActive: 0, btnAddActive: 0, mode: "SHOW-LIST", ALi: action.ALi };
+    // }
+
     case "SHOW_LIST_IMG": {
       return { AImg: action.AImg, idCurrentImg: -1, page: state.page, btnDelActive: 0, btnAddActive: 0, mode: "SHOW-LIST" };
     }
@@ -70,7 +74,13 @@ export default function gallerey(state = initialState, action) {
       if ((j < 0)||(AImg[j].url == "")) {
         return state;
       } else {
-        return { AImg, idCurrentImg: id, page: state.page, btnDelActive: 0, btnAddActive: 0, mode: state.mode };
+        let d = 1;
+        let a = 0;
+        if (action.unsplashAct == 1) {
+          d = 0;
+          a = 1;
+        }
+        return { AImg, idCurrentImg: id, page: state.page, btnDelActive: d, btnAddActive: a, mode: state.mode };
       }
     }
 

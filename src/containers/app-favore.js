@@ -7,7 +7,7 @@ const FavorePn = (props) => {
   const ALi = favoreState.ALi;
   const btnDisable = favoreState.btnDisable;
   const currentLi = favoreState.currentLi;
-  const unsplashClass = favoreState.unsplashActive == 0 ? "" : "unsplashActive";
+  const unsplashClass = favoreState.unsplashActive == 1 ? "unsplashActive" : "";
   const j = indexOfByID(ALi, currentLi);
   const nmsPart = unsplashClass != '' ? '' :  ((currentLi < 0)||(j < 0) ? '': ' "'+ALi[j].caption+'"');
 

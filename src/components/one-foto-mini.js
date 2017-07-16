@@ -1,11 +1,10 @@
 import React from "react";
-import { getPropsPhoto } from "../unit/sys-proc";
 
 const OneFotoMini = (props) => {
-  const { item, idCurrentImg, photoOnClick, showFullPhoto } = props;
+  const { item, idCurrentImg, photoOnClick, showFullPhoto, unsplashAct } = props;
   let nmsClass = "foto realFoto";
-  if (idCurrentImg == props.item.id) { nmsClass += " selectFoto"; }
-  return (<div key={props.item.id} className={nmsClass} onClick={ev => photoOnClick(item)}>
+  if (idCurrentImg == item.id) { nmsClass += " selectFoto"; }
+  return (<div key={item.id} className={nmsClass} onClick={ev => photoOnClick(item, unsplashAct)}>
             <div className="onlyPhoto"><img src={item.urlSmall} alt="only photo" width="210px" onClick={ev => showFullPhoto(item)} /></div>
             <span className="caption">Автор:</span><span className="valueInfo">{item.author}</span>&nbsp;&nbsp;
             <span className="caption">Лайков:</span><span className="valueInfo">{item.countLicke}</span><br />

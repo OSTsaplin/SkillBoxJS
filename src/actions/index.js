@@ -147,9 +147,10 @@ export const deleteALL = () => {
   }
 }
 
-export const addImg = (idImg) => {
+export const addImg = (idLi, idImg) => {
   return {
     type: "ADD_IMG",
+    idLi,
     idImg
   }
 }
@@ -164,11 +165,11 @@ export const deleteImg = (idImg) => {
   }
 }
 
-export const photoOnClick = (item) => {
+export const photoOnClick = (item, unsplashAct) => {
   if (item.url == "") {
     return { type: "EMPTY_ACTION" }
   } else {
-    return { type: "SELECT_PHOTO", id: item.id }
+    return { type: "SELECT_PHOTO", id: item.id, unsplashAct }
   }
 }
 

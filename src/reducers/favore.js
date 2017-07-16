@@ -11,7 +11,7 @@ const initialState = {
   ALi,
   currentLi: -1,
   btnDisable: 1,
-  unsplashActive: 0,
+  unsplashActive: -1,
   suppLocStor
 }
 
@@ -112,7 +112,7 @@ export default function favore(state = initialState, action) {
     }
 
     case "ADD_IMG": {
-      const idLi = state.currentLi;
+      const idLi = action.idLi;
       const ALi = [...state.ALi];
       const j = indexOfByID(ALi, idLi);
       if (j >= 0) {
